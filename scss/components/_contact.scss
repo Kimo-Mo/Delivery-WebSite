@@ -1,0 +1,21 @@
+/*=============== CONTACT ===============*/
+.contact {
+  &__container {
+    grid-template-columns: 3fr 1.5fr 1.25fr;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  &__info {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    li span {
+      font-weight: var(--font-semi-bold);
+      color: var(--title-color);
+    }
+  }
+  &__button {
+    width: fit-content;
+    margin: auto;
+  }
+}

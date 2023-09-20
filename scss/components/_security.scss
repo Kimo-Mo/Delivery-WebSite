@@ -1,0 +1,19 @@
+/*=============== SECURITY ===============*/
+.security {
+  &__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem;
+    align-items: center;
+  }
+  &__data{
+    text-align: left;
+  }
+  &__description {
+    margin-bottom: var(--mb-2);
+  }
+  @media (width <= 768px) {
+    &__data{
+      order: 1;
+    }
+  }
+}

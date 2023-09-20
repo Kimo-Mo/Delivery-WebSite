@@ -1,0 +1,23 @@
+/*=============== HOME ===============*/
+.home {
+  &__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: var(--mb-0-75);
+    font: {
+      size: var(--biggest-font-size);
+      weight: var(--font-bold);
+    }
+  }
+  &__description {
+    margin-bottom: var(--mb-2);
+    padding-right: 8rem;
+  }
+  @media (width <= 768px) {
+    &__data {
+      order: 1;
+    }
+  }
+}

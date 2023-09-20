@@ -1,0 +1,56 @@
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+@media (width <= 768px) {
+  .section {
+    padding: 4.5rem 0 1rem;
+  }
+  .nav {
+    height: var(--header-height);
+  }
+  .home__description {
+    padding: 0;
+  }
+  .home,
+  .about,
+  .security,
+  .services,
+  .app,
+  .contact {
+    &__container {
+      grid-template-columns: 1fr;
+      row-gap: 2.5rem;
+      justify-content: center;
+    }
+    &__data {
+      text-align: center;
+    }
+    &__img {
+      max-width: 300px;
+    }
+  }
+  .section__title {
+    text-align: center;
+  }
+}
+@media (width <= 425px) {
+  .footer {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@media (width > 425px) and (width <= 768px) {
+  .footer {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+/* For large devices */
+@media (width <= 1200px) {
+  .container {
+    margin-right: var(--mb-1-5);
+    margin-left: var(--mb-1-5);
+  }
+}
