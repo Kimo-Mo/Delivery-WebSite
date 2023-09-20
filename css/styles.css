@@ -607,14 +607,6 @@ body.dark-theme {
   .contact__data {
     text-align: center;
   }
-  .home__img,
-  .about__img,
-  .security__img,
-  .services__img,
-  .app__img,
-  .contact__img {
-    max-width: 300px;
-  }
   .section__title {
     text-align: center;
   }
@@ -626,6 +618,14 @@ body.dark-theme {
   }
 }
 @media (width > 425px) and (width <= 768px) {
+  .home__img,
+  .about__img,
+  .security__img,
+  .services__img,
+  .app__img,
+  .contact__img {
+    max-width: 300px;
+  }
   .footer__container {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);

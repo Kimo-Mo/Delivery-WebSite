@@ -24,9 +24,6 @@
     &__data {
       text-align: center;
     }
-    &__img {
-      max-width: 300px;
-    }
   }
   .section__title {
     text-align: center;
@@ -40,6 +37,16 @@
   }
 }
 @media (width > 425px) and (width <= 768px) {
+  .home,
+  .about,
+  .security,
+  .services,
+  .app,
+  .contact {
+    &__img {
+      max-width: 300px;
+    }
+  }
   .footer {
     &__container {
       grid-template-columns: repeat(2, 1fr);
